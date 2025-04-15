@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Collection - Timepiece Haven</title>
+    <link rel="stylesheet" href="Product.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Timepiece Haven</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html" class="active">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="products">
+        <div class="container">
+            <h2>Our Watch Collection</h2>
+            <div class="filter-options">
+                <select id="category">
+                    <option value="all">All Categories</option>
+                    <option value="chronograph">Chronograph</option>
+                    <option value="diver">Diver</option>
+                    <option value="minimalist">Minimalist</option>
+                </select>
+                <select id="price">
+                    <option value="all">All Prices</option>
+                    <option value="low">Under $200</option>
+                    <option value="medium">$200 - $400</option>
+                    <option value="high">Over $400</option>
+                </select>
+            </div>
+            
+            <div class="products-grid">
+                <!-- Product cards would be repeated or dynamically loaded -->
+                <div class="product-card" data-category="chronograph" data-price="medium">
+                    <img src="/w-4.jpg" alt="Vintage Chronograph">
+                    <h3>Vintage Chronograph</h3>
+                    <p>$279.99</p>
+                    <button class="btn">Add to Cart</button>
+                </div>
+                <div class="product-card" data-category="diver" data-price="high">
+                    <img src="/w-1.jpg" alt="Professional Diver">
+                    <h3>Professional Diver</h3>
+                    <p>$429.99</p>
+                    <button class="btn">Add to Cart</button>
+                </div>
+                <!-- More products... -->
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Timepiece Haven. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
